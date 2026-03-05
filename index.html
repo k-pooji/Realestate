@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Homes | Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="about-page">
+
+<header class="navbar">
+  <div class="logo">
+    <h1>Dream Homes</h1>
+    <p>Your trusted real estate partner</p>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <!-- your existing header -->
+  <!-- your hero section -->
+</section>
+
+<div class="container" id="properties">
+  <!-- existing search + property list -->
+</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Find Your Dream Home Today</h2>
+    <p>Luxury villas, apartments & family homes at the best prices</p>
+    <button onclick="scrollToProperties()">Explore Properties</button>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="why-box" onclick="showWhyUs('verified')">🏡 Verified Properties</div>
+  <div class="why-box" onclick="showWhyUs('price')">💰 Best Price Guarantee</div>
+  <div class="why-box" onclick="showWhyUs('location')">📍 Prime Locations</div>
+  <div class="why-box" onclick="showWhyUs('support')">📞 24/7 Support</div>
+</section>
+
+<!-- Content will appear here -->
+<div id="whyContent" class="why-content"></div>
+
+<div class="container">
+  <div class="search-box">
+    <input type="text" id="searchLocation" placeholder="Search by location" />
+    <select id="priceFilter">
+      <option value="">Any Price</option>
+      <option value="500000">Below ₹5,00,000</option>
+      <option value="1000000">Below ₹10,00,000</option>
+      <option value="2000000">Below ₹20,00,000</option>
+    </select>
+    <button onclick="filterProperties()">Search</button>
+  </div>
+  <p id="propertyCount"></p>
+  <div class="properties" id="propertyList"></div>
+</div>
+
+<section id="about" class="info-section">
+  <h2>About Us</h2>
+  <p>
+    Dream Homes is a trusted real estate platform helping people find
+    affordable and luxury homes across prime locations in India.
+  </p></br>
+  <section class="about-company">
+
+    <section class="gallery">
+  <h2>Our Projects</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+  </div>
+</section>
+
+  <h2>Who We Are</h2>
+  <p>
+    Dream Homes is a leading real estate platform dedicated to helping
+    individuals and families find their perfect homes. With a strong
+    focus on transparency, trust, and customer satisfaction, we connect
+    buyers with verified properties across prime locations.
+  </p></br>
+
+  <section class="about-images">
+  <div class="about-image-text">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Luxury Homes">
+
+    <div class="about-text">
+      <h2>Building Trust Through Quality Homes</h2>
+      <p>
+        At Dream Homes, we focus on delivering verified properties,
+        modern infrastructure, and customer satisfaction through
+        innovative real estate solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section class="mission-vision">
+  <div>
+    <h3>Our Mission</h3>
+    <p>
+      To simplify the property buying process by providing verified
+      listings, fair pricing, and expert guidance.
+    </p></br>
+  </div>
+  <div>
+    <h3>Our Vision</h3>
+    <p>
+      To become India’s most trusted real estate platform through
+      innovation and customer-centric services.
+    </p>
+  </div>
+  </section>
+  </section>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form
+  action="https://formspree.io/f/mwvkabqz"
+  method="POST"
+>
+  <label>
+    Your name:
+    <input type="name" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+  </section>
+
+<footer>
+  <p>© 2025 Dream Homes. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
